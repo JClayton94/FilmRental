@@ -1,6 +1,3 @@
-
-//console.log("request.response[0]");
-
 let JSONArray = [];
 
 function getData(){
@@ -33,3 +30,56 @@ function searchFilms(film){
         }
     }
 }
+function showAction(){
+
+    document.getElementById('textArea').innerHTML = "";
+ 
+    for(i=0; i < JSONArray.length; i++){
+        
+        if(JSONArray[i].category == "Action"){
+            console.log("got here");
+            document.getElementById('textArea').innerHTML += JSONArray[i].title + " <br>" + JSONArray[i].description  +" <br>";
+
+        }
+    }
+}
+function showSciFi(){
+
+    document.getElementById('textArea').innerHTML = "";
+   
+    for(i=0; i < JSONArray.length; i++){
+        
+        if(JSONArray[i].category == "Sci-Fi"){
+
+            document.getElementById('textArea').innerHTML += JSONArray[i].title + " <br>" + JSONArray[i].description  +" <br>";
+
+        }
+    }
+}
+function showFamily(){
+
+    document.getElementById('textArea').innerHTML = "";
+   
+    for(i=0; i < JSONArray.length; i++){
+        
+        if(JSONArray[i].category == "Family"){
+
+            document.getElementById('textArea').innerHTML += JSONArray[i].title + " <br>" + JSONArray[i].description  +" <br>";
+
+        }
+    }
+}
+function showChildren(){
+
+    document.getElementById('textArea').innerHTML = "";
+    
+    for(i=0; i < JSONArray.length; i++){
+        
+        if(JSONArray[i].category == "Children"){
+
+            document.getElementById('textArea').innerHTML += JSONArray[i].title + " <br>" + JSONArray[i].description  +" <br>";
+
+        }
+    }
+}
+
